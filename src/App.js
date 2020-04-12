@@ -7,7 +7,7 @@ import Hero from './components/Hero';
 function App() {
   return (
     <div className="App">
-        <Header />            {/* we've moved the header coponent here because it will appear in every page*/}
+        <Header />            {/* we've moved the header component here because it will appear in every page*/}
         <Hero />
         <Home />
 
