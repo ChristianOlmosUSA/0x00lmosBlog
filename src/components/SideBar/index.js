@@ -10,18 +10,34 @@ import Card from '../UI/Card';
 const SideBar = (props) => {
   return(
       <div className="sidebarContainer">
-            <Card style={{marginBottom:'20px'}}>
+            <Card style={{marginBottom:'20px', padding:'20px', boxSizing:'border-box'}}>
                 <div className="cardHeader">
                     <span>About Us</span>
-                    <div>
-                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEhwac3_zELYg/profile-displayphoto-shrink_200_200/0?e=1592438400&v=beta&t=Ot1QYURn8xf9zWE5dbC8zfblGzDLdw2QmLYQ-xGnFG8"></img>
+                   
+                </div>
+                <div className="profileImageContainer">
+                        <img src="https://c1.staticflickr.com/5/4091/5194856335_a80059533c_b.jpg"></img>
                     </div>
+                <div className="cardBody">
+                  <p className="personalBio">  my name is Rower, my name is Rower,my name is Rower,my name is Rower,my name is Rower,my name is Rower,my name is Rower,</p>  
                 </div>
             </Card>
 
-            <Card>
+            <Card style={{marginBottom:'20px', padding:'20px', boxSizing:'border-box'}}>
                 <div className="cardHeader">
                     <span>Social Networks</span>
+                </div>
+            </Card>
+            <Card style={{marginBottom:'20px', padding:'20px', boxSizing:'border-box'}}>
+                <div className="cardHeader">
+                    <span> Recent Posts</span>
+                </div>
+                <div className="recentPosts">
+                    <div className="recentPost">
+                        <h3 className="recentPostTitle">Post Title</h3>
+                        <span>March 2020</span>
+
+                    </div>
                 </div>
             </Card>
       </div>

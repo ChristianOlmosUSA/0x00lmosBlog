@@ -11,7 +11,7 @@ const BlogPost = (props) => {
   return(
     
         <div className="blogPostContainer">
-            <Card width="70%">
+            <Card width="100%">
                 <div className="blogHeader">
                     <span className="blogCategory">Featured</span>
                     <h1 className="postTitle">Beautiful is always Beautiful Statement</h1>
