@@ -8,7 +8,7 @@ import './style.css';
 
 const Card = (props) => {
   return(
-    <div className="card">
+    <div className="card" style={{width:props.width?props.width:'100%'}}{...props}>   {/* anything used in Cards will be available here*/}
         
         {props.children}
         
