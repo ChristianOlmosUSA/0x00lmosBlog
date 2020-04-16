@@ -13,7 +13,6 @@
 }
 
 .postTitle{
-
     letter-spacing: 0.5px;
     text-transform:capitalize;
     font-size: 30px;
@@ -26,6 +25,7 @@
     font-style:italic;
     padding: 10px 0;
     display:block;
+    color: #6c6c6c;
 }
 
 .postImageContainer{

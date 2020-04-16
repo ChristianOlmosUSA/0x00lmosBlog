@@ -11,15 +11,13 @@ function App() {
   return (
     <Router>
 
-    <div className="App">
-        <Header />            {/* we've moved the header component here because it will appear in every page*/}
-        <Hero />
-        <Route path="/" exact component={Home} />           {/* forward slash means to load the component, and the route, hence we put exact to stop all the items upstream being loaded too*/}
-        <Route path="/contact-us" component={ContactUS}/>
-        <Route path="/post" component={Post} />
-    </div>
-
-
+      <div className="App">
+          <Header />            {/* we've moved the header component here because it will appear in every page*/}
+          <Hero />
+          <Route path="/" exact component={Home} />           {/* forward slash means to load the component, and the route, hence we put 'exact' to stop all the items upstream being loaded too. 15.39*/}
+          <Route path="/contact-us" component={ContactUS}/>
+          <Route path="/post" component={Post} />
+      </div>
     </Router>
    
   );

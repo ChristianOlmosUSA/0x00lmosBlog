@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import Card from '../UI/Card';
 
-/**
+/** https://youtu.be/JE8w1gvn0Y4?t=3567
 * @author
 * @function SideBar
 **/
@@ -19,7 +19,7 @@ const SideBar = (props) => {
                         <img src="https://c1.staticflickr.com/5/4091/5194856335_a80059533c_b.jpg"></img>
                     </div>
                 <div className="cardBody">
-                  <p className="personalBio">  my name is Rower, my name is Rower,my name is Rower,my name is Rower,my name is Rower,my name is Rower,my name is Rower,</p>  
+                  <p className="personalBio">  my name is Rower, and I like to row ,my name is Rower,my name is Rower,my name is Rower,my name is Rower,my name is Rower,</p>  
                 </div>
             </Card>
 
@@ -36,7 +36,16 @@ const SideBar = (props) => {
                     <div className="recentPost">
                         <h3 className="recentPostTitle">Post Title</h3>
                         <span>March 2020</span>
+                    </div>
 
+                    <div className="recentPost">
+                        <h3 className="recentPostTitle">Post Title</h3>
+                        <span>April 2020</span>
+                    </div>
+
+                    <div className="recentPost">
+                        <h3 className="recentPostTitle">Post Title</h3>
+                        <span>May 2020</span>
                     </div>
                 </div>
             </Card>
