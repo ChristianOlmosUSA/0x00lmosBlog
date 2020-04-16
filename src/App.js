@@ -16,7 +16,7 @@ function App() {
           <Hero />
           <Route path="/" exact component={Home} />           {/* forward slash means to load the component, and the route, hence we put 'exact' to stop all the items upstream being loaded too. 15.39*/}
           <Route path="/contact-us" component={ContactUS}/>
-          <Route path="/post" component={Post} />
+          <Route path="/post/:postid" component={Post} />
       </div>
     </Router>
    

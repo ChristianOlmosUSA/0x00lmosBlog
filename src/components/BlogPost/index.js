@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react'; 
 import './style.css';
 import Card from '../UI/Card';
+import data from '../../data/blog.json';
 
 /**
 * @author
@@ -8,6 +9,15 @@ import Card from '../UI/Card';
 **/
 
 const BlogPost = (props) => {
+
+                                         
+
+    useEffect(()=>{
+        const postId = props.match.params.postId;           /*console.log(props); 1.19.47 && 1.21.30 */
+        console.log(data);
+    })
+
+
   return(
     
         <div className="blogPostContainer">
@@ -15,7 +25,7 @@ const BlogPost = (props) => {
                 <div className="blogHeader">
                     <span className="blogCategory">Featured</span>
                     <h1 className="postTitle">Beautiful Statement 42</h1>
-                    <span className="postedBy">posted on July 2019</span>
+                    <span className="postedBy">posted on July 2019</span>           {/* executes before or after lifcycle */}
                 </div>
 
                 <div className="postImageContainer">
