@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'; 
 import './style.css';
 import Card from '../UI/Card';
-import data from '../../data/blog.json';
+import blogPost from '../../data/blog.json';
 
 /**
 * @author
@@ -10,12 +10,15 @@ import data from '../../data/blog.json';
 
 const BlogPost = (props) => {
 
-                                         
+     const [post, setPost] = useState({});    
+                                 
 
     useEffect(()=>{
         const postId = props.match.params.postId;           /*console.log(props); 1.19.47 && 1.21.30 */
-        console.log(data);
-    })
+        const post = blogPost.data.find(post=>post.id === postId);         /* render what ever elements get matched to post.id, return blogPost*/
+        setPost(post);
+        console.log(blogPost);
+    });
 
 
   return(
@@ -24,8 +27,8 @@ const BlogPost = (props) => {
             <Card width="100%">
                 <div className="blogHeader">
                     <span className="blogCategory">Featured</span>
-                    <h1 className="postTitle">Beautiful Statement 42</h1>
-                    <span className="postedBy">posted on July 2019</span>           {/* executes before or after lifcycle */}
+                    <h1 className="postTitle"> {post.blogTitle}</h1>
+                    <span className="postedBy">mio</span>           {/* executes before or after lifcycle */}
                 </div>
 
                 <div className="postImageContainer">
