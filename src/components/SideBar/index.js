@@ -46,36 +46,20 @@ const SideBar = (props) => {
                 <div className="recentPosts">
 
                     {
-                    posts.map(post=>{
+                    posts.map(post=>{               {/* here we map the json out into our sidebar as quick links*/}
                         return(
-                            <NavLink to={`/post/1`}>
+                            <NavLink to={`/post/${post.id}`}>
                                 <div className="recentPost">
                                     <h3>{post.blogTitle}</h3>
                                         <span>{post.postedOn}</span>
                                 </div>
                             </NavLink>
 
-                        )
+                        );
                     })
 
                     }
-
-
-
-                    <div className="recentPost">
-                        <h3 className="recentPostTitle">Post Title</h3>
-                        <span>March 2020</span>
-                    </div>
-
-                    <div className="recentPost">
-                        <h3 className="recentPostTitle">Post Title</h3>
-                        <span>April 2020</span>
-                    </div>
-
-                    <div className="recentPost">
-                        <h3 className="recentPostTitle">Post Title</h3>
-                        <span>May 2020</span>
-                    </div>
+                   
                 </div>
             </Card>
       </div>
