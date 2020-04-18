@@ -9,17 +9,16 @@ import blogPost from '../../data/blog.json';
 **/
 
 const BlogPost = (props) => {
-
-     const [post, setPost] = useState({});    
+     const [post, setPost] = useState({});   
+     const[postId,setPostId] = useState('');
                                  
-
     useEffect(()=>{
-        const postId = props.match.params.postId;           /*console.log(props); 1.19.47 && 1.21.30 */
-       /* const post = blogPost.data.find(post=>post.id === postId);         /* render what ever elements get matched to post.id, return blogPost*/
+       const postId = props.match.params.postId;           /*console.log(props); 1.19.47 && 1.21.30 */       /* const post = blogPost.data.find(post=>post.id === postId);         /* render what ever elements get matched to post.id, return blogPost*/
        const post = blogPost.data.find((ele) => ele.id === parseInt(postId)); 
        setPost(post);
-        console.log(blogPost);
-    });
+       setPostId(postId)
+        
+    }, [post, props.match.params.postId]);
 
 
   return(

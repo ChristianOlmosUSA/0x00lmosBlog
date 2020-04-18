@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
+import {NavLink} from 'react-router-dom';
 import './style.css';
 import Card from '../UI/Card';
+import blogPost from '../../data/blog.json'
 
 /** https://youtu.be/JE8w1gvn0Y4?t=3567
 * @author
@@ -8,6 +10,15 @@ import Card from '../UI/Card';
 **/
 
 const SideBar = (props) => {
+
+    const [posts, setPosts] = useState([]); 
+
+    useEffect(()=>{             
+       const posts = blogPost.data;     {/* un reel the whole json*/}
+       setPosts(posts);
+    }, posts);
+
+
   return(
       <div className="sidebarContainer">
             <Card style={{marginBottom:'20px', padding:'20px', boxSizing:'border-box'}}>
@@ -33,6 +44,24 @@ const SideBar = (props) => {
                     <span> Recent Posts</span>
                 </div>
                 <div className="recentPosts">
+
+                    {
+                    posts.map(post=>{
+                        return(
+                            <NavLink to={`/post/1`}>
+                                <div className="recentPost">
+                                    <h3>{post.blogTitle}</h3>
+                                        <span>{post.postedOn}</span>
+                                </div>
+                            </NavLink>
+
+                        )
+                    })
+
+                    }
+
+
+
                     <div className="recentPost">
                         <h3 className="recentPostTitle">Post Title</h3>
                         <span>March 2020</span>
