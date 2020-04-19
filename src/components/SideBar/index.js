@@ -16,7 +16,7 @@ const SideBar = (props) => {
     useEffect(()=>{             
        const posts = blogPost.data;     {/* un reel the whole json*/}
        setPosts(posts);
-    }, posts);
+    },[posts]);
 
 
   return(
@@ -48,7 +48,7 @@ const SideBar = (props) => {
                     {
                     posts.map(post=>{               {/* here we map the json out into our sidebar as quick links*/}
                         return(
-                            <NavLink to={`/post/${post.id}`}>
+                            <NavLink key={post.id} to={`/post/${post.id}`}>
                                 <div className="recentPost">
                                     <h3>{post.blogTitle}</h3>
                                         <span>{post.postedOn}</span>
