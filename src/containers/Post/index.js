@@ -20,7 +20,7 @@ const Post = (props) => {
 
     <section className="container">     {/* THE MAIN SECTION*/}
         <BlogPost {...props} />
-        <SideBar  {...props}/>
+        <SideBar />
 
         
     </section>
