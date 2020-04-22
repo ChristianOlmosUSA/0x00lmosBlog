@@ -5,18 +5,18 @@ import sideBar from '../../components/SideBar';
 
 const Home =props=> {
 
-    const gallaryHeight= 450;
-    const gallaryStyle={
-        height:gallaryHeight+'px',
+    const galleryHeight= 450;
+    const galleryStyle={
+        height:galleryHeight+'px',
         overflow:'hidden'
     }
 
-        const sideImageHeight = gallaryHeight/3;
+        const sideImageHeight = galleryHeight/3;
 
         return (
             <div>
                 <Card>
-                    <div className="gallaryPost" style={gallaryStyle}>
+                    <div className="galleryPost" style={galleryStyle}>
                     <section style={{width: '70%'}}>
                         <div > 
                             <img src={"https://cdn.dribbble.com/users/991821/screenshots/2704993/_____.jpg"} alt="" />
