@@ -16,3 +16,14 @@
 .headerMenu a:hover{
     color: #5f9ea0;
 }
+
+.socialMediaIcons{
+    font-size: 12px;
+    color: #565673;
+    letter-spacing: 1.2px;
+    display:inline-block;
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 5px;
+    right: 5px;
+    }

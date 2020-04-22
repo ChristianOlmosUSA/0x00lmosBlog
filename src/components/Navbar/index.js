@@ -30,8 +30,8 @@ const Navbar = (props) => {
         <ul className="navbarmenu">
           <li> <NavLink to="/">Home</NavLink> </li>
           <li> <NavLink to="/about-us">About Me</NavLink> </li>
-          <li> <NavLink to="/post">Posts</NavLink> </li>
-          <li> <NavLink to="/contact-us">Contact Us</NavLink> </li>
+          <li> <NavLink to="/post/1">Posts</NavLink> </li>
+          <li> <NavLink to="/contact-us">Contact</NavLink> </li>
         </ul>
         <div className="search">
             <form onSubmit={submitSearch}>

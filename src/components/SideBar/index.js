@@ -31,7 +31,7 @@ const SideBar = (props) => {
                         
                     </div>
                 <div className="cardBody">
-                  <p className="personalBio">  I'm Christian Olmos and hacking is my hobby. I have of course realised that if you want to break something, first you need to learn how to make it, so this blog follows my journey into making websites and various tech (rasberryPi, react, python, kali etc), which should lead to me becoming a better hacker, taking my OSCP and my Masters in Cybersecurity.</p>  
+                  <p className="personalBio">  I'm Christian Olmos and hacking is my hobby. I have of course realised that if you want to break something, first you need to learn how to make it, so this blog follows my journey into making websites and various tech (Raspberry Pi, react, python, javascript, bugbounty, kali etc), which should lead to me becoming a better hacker, and completing my OSCP and Masters in Cybersecurity.</p>  
                 </div>
             </Card>
 
