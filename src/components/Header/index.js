@@ -15,11 +15,11 @@ const Header = (props) => {
             <a href="../">Home</a>
             <a href="../About-me">About Me</a>
             <a href="../Contact">Contact</a>
-            <a href="#">OSCP</a>
-            <a href="#">bugBounty</a>
+            <a href="#">Hacking</a>
             <a href="#">Javascript</a>
             <a href="#">python</a>
             <a href="#">raspberry Pi</a>
+            <a href="#">Coding Bootcamp</a>
         </nav>
         <div className="socialMediaIcons">
             <IconContext.Provider value={{ size: '16px'}}>
