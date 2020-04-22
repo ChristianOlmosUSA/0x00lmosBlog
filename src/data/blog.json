@@ -3,8 +3,8 @@
         {
             "id": 1,
             "blogCategory": "Featured",
-            "blogTitle" : "Fitness Mantra To Live Fit Life",
-            "slug": "fitness-mantra-to-live-fit-life",
+            "blogTitle" : "my first blog",
+            "slug": "my first blog",
             "postedOn": "July 21, 2016",
             "author": "Faiz Khan",
             "blogImage": "fitness-blog-post.jpg",

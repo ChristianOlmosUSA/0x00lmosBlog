@@ -23,14 +23,15 @@ const SideBar = (props) => {
       <div className="sidebarContainer">
             <Card style={{marginBottom:'20px', padding:'20px', boxSizing:'border-box'}}>
                 <div className="cardHeader">
-                    <span>About Us</span>
+                    <span>About Me</span>
                    
                 </div>
                 <div className="profileImageContainer">
-                        <img src="https://c1.staticflickr.com/5/4091/5194856335_a80059533c_b.jpg"></img>
+                        <img src={require('../../blogPostImages/Chris_family_selfie.jpg')} alt="selfie image"  />
+                        
                     </div>
                 <div className="cardBody">
-                  <p className="personalBio">  my name is Rower, and I like to row ,my name is Rower,my name is Rower,my name is Rower,my name is Rower,my name is Rower,</p>  
+                  <p className="personalBio">  I'm Christian Olmos and hacking is my hobby. I have of course realised that if you want to break something, first you need to learn how to make it, so this blog follows my journey into making websites and various tech (rasberryPi, react, python, kali etc), which should lead to me becoming a better hacker, taking my OSCP and my Masters in Cybersecurity.</p>  
                 </div>
             </Card>
 
