@@ -29,9 +29,9 @@ const Navbar = (props) => {
     <div className="navbar">
         <ul className="navbarmenu">
           <li> <NavLink to="/">Home</NavLink> </li>
-          <li> <NavLink to="/about-us">About Me</NavLink> </li>
+          <li> <NavLink to="/About-me">About Me</NavLink> </li>
           <li> <NavLink to="/post/1">Posts</NavLink> </li>
-          <li> <NavLink to="/contact-us">Contact</NavLink> </li>
+          <li> <NavLink to="/contact">Contact</NavLink> </li>
         </ul>
         <div className="search">
             <form onSubmit={submitSearch}>

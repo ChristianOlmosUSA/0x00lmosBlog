@@ -13,8 +13,8 @@ const Header = (props) => {
     <header className="header">
         <nav className="headerMenu">
             <a href="../">Home</a>
-            <a href="../About-us">About Me</a>
-            <a href="../Contact-us">Contact</a>
+            <a href="../About-me">About Me</a>
+            <a href="../Contact">Contact</a>
             <a href="#">Kali</a>
             <a href="#">bugBounty</a>
             <a href="#">Javascript</a>
