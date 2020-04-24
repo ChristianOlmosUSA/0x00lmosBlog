@@ -22,7 +22,7 @@ const Home =props=> {
                             <img src={"https://cdn.dribbble.com/users/991821/screenshots/2704993/_____.jpg"} alt="" />
                         </div>
                     </section>
-                    <section className={"sideImageWrapper"} style={{width: '30%'}}>                        {/* 3 images at right side of home page */}
+                    <section className={"sideImageWrapper"} style={{width: '30%'}}>                       
                         <div style={{height:`${sideImageHeight}px`}} > 
                             <img src={"https://cdn.dribbble.com/users/991821/screenshots/2704993/_____.jpg"} alt="" />
                         </div>
