@@ -15,7 +15,7 @@ const Header = (props) => {
             <a href="../">Home</a>
             <a href="../About-me">About Me</a>
             <a href="../Contact">Contact</a>
-            <a href="#">Hacking</a>
+            <a href="#">html</a>
             <a href="#">Javascript</a>
             <a href="#">python</a>
             <a href="#">raspberry Pi</a>
